@@ -1,5 +1,5 @@
 import React from "react";
-
+import { FcApproval } from "react-icons/fc";
 const Card = (props) => {
   return (
     <>
@@ -10,8 +10,10 @@ const Card = (props) => {
               <img src={props.img} className="rounded imgsize" alt="" />
             </div>
             <div className="ml-3 w-100">
-              <h4 className="mb-0 mt-0 text-left">{props.login}</h4>
-              <span className="text-left">Developer</span>
+              <h4 className="mb-0 mt-0 text-left">
+                {props.login} <FcApproval />
+              </h4>
+              {/* <span className="text-left">Developer</span> */}
               <div className="p-2 mt-2 d-flex justify-content-between rounded text-white  stats">
                 <div className="d-flex flex-column bgc">
                   <span className="articles">Article</span>
