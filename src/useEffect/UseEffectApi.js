@@ -8,7 +8,7 @@ const UseEffectApi = () => {
   }, []);
 
   const getUsers = async () => {
-    const token = "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";
+    const token = "ghp_IT3qCiHO3MDtL5MdwDBsB2LHqQolzw";
     try {
       setLoading(false);
       const response = await fetch("https://api.github.com/users", {
